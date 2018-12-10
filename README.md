@@ -1,4 +1,6 @@
 # Spark ETL
+## 数据
+就以简单的用户信息作为测试，见data/user.csv
 ## 开发注意
 1. 数据库连接配置写在resources/db.properties文件中
 2. readWriters包中写每一种数据源的读取和写入操作， 每一种数据源写出加载时需要的参数 和 输出时需要的参数
