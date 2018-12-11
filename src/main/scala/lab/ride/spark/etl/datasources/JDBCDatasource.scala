@@ -26,9 +26,6 @@ class JDBCDatasource(url: String, tbName: String, user: String, password: String
       .write
       .mode(SaveMode.valueOf(options.get("saveMode").getOrElse("Overwrite")))
       .option("createTableColumnTypes", format) //设置输出表结构
-      .jdbc(url, tbName, sqlProperties)
-
-    session.stop()
   }
 }
 
