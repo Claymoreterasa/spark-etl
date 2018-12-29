@@ -17,4 +17,5 @@ object HdfsReadWriter {
       .option("permissions", "false")
       .text(outPath)
   }
+
 }
