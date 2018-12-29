@@ -34,8 +34,6 @@ object JDBCReadWriter {
             .mode(SaveMode.Overwrite)
             .option("createTableColumnTypes", "password VARCHAR(1024), username CHAR(64), mobile CHAR(64)") //设置输出表结构
             .jdbc(url, tbName, sqlProperties)
-
-
     spark.stop()
   }
 }
